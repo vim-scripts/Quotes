@@ -1,0 +1,15 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=3209
+
+Useful handling of quote-symbols for programming, without becoming too complicated or restrictive.
+
+This script is designed so the sequence of keystrokes you would normally type (without any scripted assistance) yields the same result as with this script enabled. But that doesn\\&#039t mean you have to.
+
+- Typing \\\" introduces a new string and puts the cursor inside unless one of the following cases applies.
+- Typing \\\" just before the end of a string jumps out of the string (so you can continue typing).
+- Typing \\\" inside a string introduces a pair of escaped quote-symbols and puts the cursor in between.
+- Typing \\\" inside a string right after an escape character (i.e. an odd number of back-slashes) just inserts a \\\".
+- Typing \\\" just before \\\\\\\" inside a string jumps over the \\\\\\\", so (again) you can continue typing.
+
+It\\&#039s pretty minimal, but useful I hope.
+
+This is a 0.1 version, it has not yet been heavily used.
